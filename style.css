@@ -1,0 +1,233 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    margin-top: 5vh;
+    font-size: 1rem;
+    font-family:   Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    background-image: url(2.jpg);
+    background-position: center top;
+    background-size: cover;
+
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* Places video behind other content */
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+html{
+    font-size: 14px;
+}
+h1,h4{
+    padding: 0%;
+    margin: 0%;
+
+}
+h4{
+    text-align: center;
+    width: 30%;
+}
+h1{
+    color: #b1a7a6;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2.3rem;
+}
+input{
+    outline: none;
+    border:none;
+        font-size: 1.1rem;
+        padding: 2px;
+}
+
+input::placeholder{
+    padding: 2px;
+}
+section{
+        border: 2px rgba(192, 192, 192, 0.788) solid;
+        backdrop-filter: blur(4px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding-right: 4vw;
+        border-radius: 10px;
+    margin-bottom: 20px;
+}
+label{
+        font-size: 1.1rem;
+        font-weight: 500;
+}
+form{
+    position: relative;
+}
+.module{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+.module h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.4VW 2VW;
+    color: #d3d3d3;
+}
+.Cof{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.Cof input{
+    color: black;
+    margin: 0;
+    background-color: white;
+    padding: 2px;
+    width: 40px;
+    text-align: end;
+    
+}
+.Cof label {
+    text-align: center;
+    color: #b1a7a6;
+
+}
+
+.Cof input::placeholder{
+    color: #423a39;
+    text-align: center;
+}
+
+button{
+    background-color:#161a1d ;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    margin: 0% auto;
+    cursor: pointer;
+    margin: 2VW;
+    margin-top: 20px;
+    margin-left: 4VW;
+    width: 90%;
+    padding:  2VW;
+}
+
+
+.result{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 50%;
+    font-size: 1.3rem;
+    background-color: rgb(225, 235, 250);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+        padding-bottom: 10px;
+        z-index: 100;
+}
+.result h4{
+    width: 80%;
+    padding-top: 10px;
+    color: #42386f;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.active{
+    filter: blur(1px);
+}
+.action{
+    display: inline;
+}
+
+.msg{
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+i{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    cursor: pointer;
+} 
+
+
+
+@media (max-width :580px ) {
+    html{
+        font-size: 13px;
+    }
+    .module h4{
+        font-size: 1rem;
+    }
+        button {
+
+            padding: 3VW;
+        }
+}
+@media (max-width :420px) {
+    html {
+        font-size: 10.4px;
+    }
+
+    .module h4 {
+        font-size: 1rem;
+    }
+    .module{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+                .module {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 100%;
+                }
+
+
+
+
+}
+@media (max-width :370px) {
+
+        #enter .test  {
+               display: flex;
+               justify-content: space-evenly;
+            }
+                        #enterCOf {
+                           margin-right: 17px;
+                        }
+}
+
+
